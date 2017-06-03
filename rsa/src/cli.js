@@ -29,7 +29,7 @@ const commands = {
     const keys = Object.assign(
       {
         modulus: BigInt(modulus),
-        privateExponent: BigInt(publicExponent),
+        publicExponent: BigInt(publicExponent),
       },
       pem ? await parsePem(pem) : {},
     );
