@@ -39,7 +39,7 @@ $ node lib/cli.js encrypt --pem path/to/public-key.pem --text '朝焼け' --enco
 |modulus|A number called *modulus* in an output of `openssl rsa` with `-text` option.|
 |publicExponent|A number called *publicExponent* in an output of `openssl rsa` with `-text` option.|
 |text|A string to be encrypted.|
-|encoding|`'ascii'|'utf8'` Specify `utf8` if your input contains any non-ascii characters.|
+|encoding|`'ascii' or 'utf8'` Specify `utf8` if your input contains any non-ascii characters.|
 
 ### decrypt
 
@@ -61,7 +61,7 @@ $ node lib/cli.js decrypt --pem path/to/private-key.pem --cipher '69185568354934
 |modulus|A number called *modulus* in an output of `openssl rsa` with `-text` option.|
 |privateExponent|A number called *privateExponent* in an output of `openssl rsa` with `-text` option.|
 |cipher|A string to be decrypted.|
-|encoding|`'ascii'|'utf8'` Specify `utf8` if your input contains any non-ascii characters.|
+|encoding|`'ascii' or 'utf8'` Specify `utf8` if your input contains any non-ascii characters.|
 
 ## Tests
 
